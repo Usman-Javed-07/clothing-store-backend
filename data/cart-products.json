@@ -190,5 +190,21 @@
     "rating": 4,
     "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
     "quantity": 200
+  },
+  {
+    "id": 28,
+    "name": "mouse ",
+    "price": 78,
+    "rating": 3,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 230
+  },
+  {
+    "id": 29,
+    "name": "Usman Javed",
+    "price": 233,
+    "rating": 4,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 3
   }
 ]
