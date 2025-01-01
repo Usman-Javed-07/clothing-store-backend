@@ -41,11 +41,11 @@
   },
   {
     "id": 6,
-    "name": "stylish girls trouser",
-    "price": 22,
-    "rating": 5,
+    "name": "girls trouser ",
+    "price": 10,
+    "rating": 3,
     "imageUrl": "http://localhost:5000/images/workout-leggings.jpg",
-    "quantity": 10
+    "quantity": 12
   },
   {
     "id": 7,
@@ -206,5 +206,13 @@
     "rating": 4,
     "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
     "quantity": 3
+  },
+  {
+    "id": 30,
+    "name": "girls winter paint",
+    "price": 1900,
+    "rating": 5,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 200
   }
 ]
