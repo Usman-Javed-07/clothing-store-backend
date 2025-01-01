@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Classic White T-Shirt",
+    "price": 19.99,
+    "rating": 4.5,
+    "imageUrl": "http://localhost:5000/images/white-tshirt.jpg",
+    "quantity": 50
+  },
+  {
+    "id": 2,
+    "name": "Blue Denim Jeans",
+    "price": 49.99,
+    "rating": 4.7,
+    "imageUrl": "http://localhost:5000/images/blue-jeans.jpg",
+    "quantity": 30
+  },
+  {
+    "id": 3,
+    "name": "Jacket",
+    "price": 129.99,
+    "rating": 4.8,
+    "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
+    "quantity": 20
+  },
+  {
+    "id": 4,
+    "name": "Printed Shirt",
+    "price": 39.99,
+    "rating": 4.6,
+    "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
+    "quantity": 40
+  },
+  {
+    "id": 5,
+    "name": "Summer shirt",
+    "price": 29.99,
+    "rating": 4.4,
+    "imageUrl": "http://localhost:5000/images/summer-dress.jpg",
+    "quantity": 60
+  },
+  {
+    "id": 6,
+    "name": "Workout Leggings",
+    "price": 24.99,
+    "rating": 4.7,
+    "imageUrl": "http://localhost:5000/images/workout-leggings.jpg",
+    "quantity": 45
+  },
+  {
+    "id": 7,
+    "name": "Plaid Shirt",
+    "price": 34.99,
+    "rating": 4.3,
+    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
+    "quantity": 35
+  },
+  {
+    "id": 8,
+    "name": "Winter paint",
+    "price": 99.99,
+    "rating": 4.9,
+    "imageUrl": "http://localhost:5000/images/winter-coat.jpg",
+    "quantity": 15
+  },
+  {
+    "id": 9,
+    "name": "green paint",
+    "price": 22.99,
+    "rating": 4.5,
+    "imageUrl": "http://localhost:5000/images/graphic-tee.jpg",
+    "quantity": 25
+  },
+  {
+    "id": 10,
+    "name": "women Pants",
+    "price": 44.99,
+    "rating": 4.6,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 20
+  },
+  {
+    "id": 11,
+    "name": "girls mordren shirts",
+    "price": 14.99,
+    "rating": 4.2,
+    "imageUrl": "http://localhost:5000/images/baseball-cap.jpg",
+    "quantity": 55
+  },
+  {
+    "id": 12,
+    "name": "simple shirt",
+    "price": 79.99,
+    "rating": 4.8,
+    "imageUrl": "http://localhost:5000/images/white-tshirt.jpg",
+    "quantity": 50
+  },
+  {
+    "id": 13,
+    "name": "Wool Jacket",
+    "price": 24.99,
+    "rating": 4.4,
+    "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
+    "quantity": 25
+  },
+  {
+    "id": 14,
+    "name": "Formal Shirt",
+    "price": 49.99,
+    "rating": 4.5,
+    "imageUrl": "http://localhost:5000/images/formal-shirt.jpg",
+    "quantity": 35
+  },
+  {
+    "id": 15,
+    "name": "Plaid Shirt",
+    "price": 59.99,
+    "rating": 4.7,
+    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
+    "quantity": 30
+  },
+  {
+    "id": 16,
+    "name": "Floral Maxi Dress",
+    "price": 69.99,
+    "rating": 4.6,
+    "imageUrl": "http://localhost:5000/images/workout-leggings.jpg",
+    "quantity": 25
+  },
+  {
+    "id": 17,
+    "name": "Linen Shirts",
+    "price": 34.99,
+    "rating": 4.3,
+    "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
+    "quantity": 40
+  },
+  {
+    "id": 18,
+    "name": "colored shirt",
+    "price": 129.99,
+    "rating": 4.8,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 15
+  },
+  {
+    "id": 19,
+    "name": "Knitted Sweater",
+    "price": 54.99,
+    "rating": 4.7,
+    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
+    "quantity": 20
+  },
+  {
+    "id": 20,
+    "name": "Classic shirt",
+    "price": 19.99,
+    "rating": 4.4,
+    "imageUrl": "http://localhost:5000/images/formal-shirt.jpg",
+    "quantity": 50
+  },
+  {
+    "id": 24,
+    "name": "iphone 16 pro max back cover",
+    "price": 13.5,
+    "rating": 4.8,
+    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
+    "quantity": 220
+  },
+  {
+    "id": 25,
+    "name": "slipper",
+    "price": 3.5,
+    "rating": 4.99,
+    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
+    "quantity": 50
+  },
+  {
+    "id": 26,
+    "name": "Product Name",
+    "price": 10.5,
+    "rating": 4.5,
+    "imageUrl": "example.jpg",
+    "quantity": 20
+  },
+  {
+    "id": 27,
+    "name": "laptop",
+    "price": 3000,
+    "rating": 4,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 200
+  }
+]
