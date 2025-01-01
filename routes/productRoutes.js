@@ -6,10 +6,12 @@ const {
   updateQuantity,
   createProduct,
   deleteProduct,
+  updateProduct, 
 } = require("../controllers/productController");
 
 const router = express.Router();
 
+router.put("/update-product/:id", updateProduct);
 router.post("/update-quantity", updateQuantity);
 router.post("/load-products", loadProducts);
 router.get("/products", getProducts);

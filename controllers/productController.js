@@ -105,19 +105,24 @@ const deleteProduct = async (req, res) => {
     res.status(500).json({ message: "Error deleting product", error });
   }
 };
+
 const updateProduct = async (req, res) => {
-  const { id } = req.params;
-  const { name, price, rating, imageUrl, quantity } = req.body;
+  const { id } = req.params;  
+  const { name, price, rating, imageUrl, quantity } = req.body; 
 
   try {
+ 
     const product = await Product.findByPk(id);
 
     if (!product) {
       return res.status(404).json({ message: `Product with ID ${id} not found.` });
     }
+
+
     if (!name || !price || quantity === undefined) {
       return res.status(400).json({ message: "Name, price, and quantity are required." });
     }
+
     product.name = name;
     product.price = price;
     product.rating = rating;
@@ -125,7 +130,6 @@ const updateProduct = async (req, res) => {
     product.quantity = quantity;
 
     await product.save();
-
     const productsFilePath = path.join(__dirname, "../data/cart-products.json");
     let products = [];
 
@@ -133,6 +137,7 @@ const updateProduct = async (req, res) => {
       const rawData = fs.readFileSync(productsFilePath, "utf8");
       products = JSON.parse(rawData);
     }
+
     const productIndex = products.findIndex(p => p.id === parseInt(id));
     if (productIndex !== -1) {
       products[productIndex] = {
@@ -145,7 +150,6 @@ const updateProduct = async (req, res) => {
       };
       fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
     }
-
     res.status(200).json({
       message: "Product updated successfully!",
       product,
