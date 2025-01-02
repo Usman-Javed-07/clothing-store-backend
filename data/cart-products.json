@@ -9,16 +9,16 @@
   },
   {
     "id": 2,
-    "name": "Blue Denim Jeans",
-    "price": 49.99,
-    "rating": 4.7,
+    "name": "Blue Denim Jeansgbr",
+    "price": 141,
+    "rating": 5,
     "imageUrl": "http://localhost:5000/images/blue-jeans.jpg",
-    "quantity": 30
+    "quantity": 3047
   },
   {
     "id": 3,
     "name": "Jacket",
-    "price": 129.99,
+    "price": 129,
     "rating": 4.8,
     "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
     "quantity": 20
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Printed Shirt",
-    "price": 39.99,
+    "price": 39,
     "rating": 4.6,
     "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
     "quantity": 40
@@ -65,11 +65,11 @@
   },
   {
     "id": 9,
-    "name": "green paint",
-    "price": 22.99,
+    "name": "green paints for men",
+    "price": 23,
     "rating": 4.5,
     "imageUrl": "http://localhost:5000/images/graphic-tee.jpg",
-    "quantity": 10
+    "quantity": 40
   },
   {
     "id": 10,
@@ -97,19 +97,19 @@
   },
   {
     "id": 13,
-    "name": "Wool Jacket",
-    "price": 24.99,
-    "rating": 4.4,
+    "name": "winter jacket",
+    "price": 120,
+    "rating": 4,
     "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
-    "quantity": 10
+    "quantity": 40
   },
   {
     "id": 14,
     "name": "Formal Shirt",
-    "price": 49.99,
-    "rating": 4.5,
+    "price": 211,
+    "rating": 4,
     "imageUrl": "http://localhost:5000/images/formal-shirt.jpg",
-    "quantity": 35
+    "quantity": 21
   },
   {
     "id": 15,
@@ -221,6 +221,6 @@
     "price": 24,
     "rating": 3,
     "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 10
+    "quantity": 0
   }
 ]
