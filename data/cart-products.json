@@ -222,5 +222,13 @@
     "rating": 3,
     "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
     "quantity": 0
+  },
+  {
+    "id": 32,
+    "name": "Usman Javed",
+    "price": 42,
+    "rating": 4,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 71
   }
 ]
