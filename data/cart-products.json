@@ -97,11 +97,11 @@
   },
   {
     "id": 13,
-    "name": "winter jacket",
+    "name": "winter jacket for men 2",
     "price": 120,
     "rating": 4,
     "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
-    "quantity": 40
+    "quantity": 100
   },
   {
     "id": 14,
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "name": "Plaid Shirt",
-    "price": 59.99,
+    "price": 59,
     "rating": 4.7,
     "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
     "quantity": 30
@@ -230,5 +230,21 @@
     "rating": 4,
     "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
     "quantity": 71
+  },
+  {
+    "id": 33,
+    "name": "b",
+    "price": 12,
+    "rating": 3,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 12
+  },
+  {
+    "id": 34,
+    "name": "test",
+    "price": 150,
+    "rating": 4,
+    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
+    "quantity": 50
   }
 ]
