@@ -1,13 +1,14 @@
-
-const Order = require("../models/Order");
-const Product = require("../models/Product");
+const Order = require("../models/order.model");
+const Product = require("../models/product.model");
 
 const createOrder = async (req, res) => {
   const { orderItems, totalAmount } = req.body;
 
   try {
     if (!orderItems || !totalAmount) {
-      return res.status(400).json({ message: "Order items and total amount are required." });
+      return res
+        .status(400)
+        .json({ message: "Order items and total amount are required." });
     }
 
     const newOrder = await Order.create({
@@ -19,7 +20,9 @@ const createOrder = async (req, res) => {
       const product = await Product.findOne({ where: { name: item.name } });
 
       if (!product) {
-        return res.status(404).json({ error: `Product ${item.name} not found.` });
+        return res
+          .status(404)
+          .json({ error: `Product ${item.name} not found.` });
       }
 
       if (product.quantity < item.quantity) {
@@ -46,17 +49,17 @@ const createOrder = async (req, res) => {
 };
 
 const getAllOrders = async (req, res) => {
-    try {
-      const orders = await Order.findAll();
-      res.status(200).json(orders);
-    } catch (error) {
-      console.error("Error fetching orders:", error);
-      res.status(500).json({
-        message: "Error fetching orders.",
-        error: error.message || error,
-      });
-    }
-  };
+  try {
+    const orders = await Order.findAll();
+    res.status(200).json(orders);
+  } catch (error) {
+    console.error("Error fetching orders:", error);
+    res.status(500).json({
+      message: "Error fetching orders.",
+      error: error.message || error,
+    });
+  }
+};
 
 module.exports = {
   createOrder,

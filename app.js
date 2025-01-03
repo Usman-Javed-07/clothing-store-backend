@@ -2,9 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { connectDB } = require("./config/database");
-const productRoutes = require("./routes/productRoutes");
-const orderRouter = require("./routes/orderRoutes");
-const contactRoutes = require("./routes/contact");
+const productRoutes = require("./routes/product.route");
+const orderRouter = require("./routes/order.route");
+const contactRoutes = require("./routes/contact.route");
 
 const path = require("path");
 
@@ -20,7 +20,6 @@ connectDB();
 app.use("/api/orders", orderRouter);
 app.use("/api/products", productRoutes);
 app.use("/images", express.static(path.join(__dirname, "images")));
-app.use("/api", productRoutes);
 app.use("/api/contact", contactRoutes);
 
 app.get("/", (req, res) => {

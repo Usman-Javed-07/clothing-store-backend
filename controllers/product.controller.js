@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Product = require("../models/Product");
+const Product = require("../models/product.model");
 const path = require("path");
 
 const loadProducts = async (req, res) => {
@@ -189,13 +189,15 @@ const getProductById = async (req, res) => {
     const product = await Product.findByPk(productId); // Fetch product by primary key (ID)
 
     if (!product) {
-      return res.status(404).json({ error: 'Product not found' });
+      return res.status(404).json({ error: "Product not found" });
     }
 
     res.json(product);
   } catch (error) {
     console.error("Error fetching product:", error);
-    res.status(500).json({ error: "An error occurred while fetching the product." });
+    res
+      .status(500)
+      .json({ error: "An error occurred while fetching the product." });
   }
 };
 
