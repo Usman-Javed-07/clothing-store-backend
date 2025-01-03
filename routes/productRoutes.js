@@ -7,6 +7,7 @@ const {
   createProduct,
   deleteProduct,
   updateProduct, 
+  getProductById,
 } = require("../controllers/productController");
 
 const router = express.Router();
@@ -17,5 +18,6 @@ router.post("/load-products", loadProducts);
 router.get("/products", getProducts);
 router.post("/create", createProduct);
 router.delete("/delete/:id", deleteProduct);
+router.get('/:id', getProductById);
 
 module.exports = router;
