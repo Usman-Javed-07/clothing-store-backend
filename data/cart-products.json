@@ -130,10 +130,10 @@
   {
     "id": 17,
     "name": "Linen Shirts",
-    "price": 34.99,
-    "rating": 4.3,
+    "price": 34,
+    "rating": 4,
     "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
-    "quantity": 40
+    "quantity": 10
   },
   {
     "id": 18,

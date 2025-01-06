@@ -186,7 +186,7 @@ const getProductById = async (req, res) => {
   const productId = req.params.id;
 
   try {
-    const product = await Product.findByPk(productId); // Fetch product by primary key (ID)
+    const product = await Product.findByPk(productId); 
 
     if (!product) {
       return res.status(404).json({ error: "Product not found" });

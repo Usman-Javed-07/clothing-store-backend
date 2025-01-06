@@ -21,6 +21,7 @@ app.use("/api/orders", orderRouter);
 app.use("/api/products", productRoutes);
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/contact", contactRoutes);
+app.use("/api", productRoutes);
 
 app.get("/", (req, res) => {
   res.send("API is running...");
