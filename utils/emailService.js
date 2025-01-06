@@ -28,32 +28,28 @@ async function getTemplate(templateName, replacements) {
   }
 }
 
-// Function to send the email
 async function sendEmail(to, subject, templateName, replacements) {
   try {
-    // Create a transporter with SMTP details
+    
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+      secure: process.env.SMTP_SECURE === "true", 
       auth: {
-        user: process.env.SMTP_USER, // SMTP username
-        pass: process.env.SMTP_PASS, // SMTP password
+        user: process.env.SMTP_USER, 
+        pass: process.env.SMTP_PASS, 
       },
     });
 
-    // Get the email content with placeholders replaced
     const htmlContent = await getTemplate(templateName, replacements);
 
-    // Set up email data
     const mailOptions = {
-      from: process.env.EMAIL_FROM, // sender address
-      to, // list of receivers
-      subject, // Subject line
-      html: htmlContent, // HTML body
+      from: process.env.EMAIL_FROM, 
+      to, 
+      subject, 
+      html: htmlContent,
     };
 
-    // Send the email
     const info = await transporter.sendMail(mailOptions);
     console.log("Email sent: %s", info.messageId);
   } catch (error) {
