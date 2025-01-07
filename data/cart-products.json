@@ -18,12 +18,7 @@
     "price": 141,
     "rating": 5,
     "imageUrl": "http://localhost:5000/images/blue-jeans.jpg",
-    "quantity": 3047,
-    "material": "Denim",
-    "care_instructions": "Machine wash cold, do not bleach",
-    "fit": "Slim fit",
-    "details": "Stretchable fabric for added comfort",
-    "recommendations": "Style with a casual shirt or T-shirt"
+    "quantity": 30
   },
   {
     "id": 3,
@@ -76,5 +71,18 @@
     "fit": "Regular fit",
     "details": "Elastic waistband, comfortable fit",
     "recommendations": "Pair with a casual top for everyday wear"
+  },
+  {
+    "id": 9,
+    "name": "laptop",
+    "price": 4999,
+    "rating": 5,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 100,
+    "material": "silver",
+    "care_instructions": "",
+    "fit": "1024",
+    "details": "dell laptop",
+    "recommendations": "100 recomended"
   }
 ]

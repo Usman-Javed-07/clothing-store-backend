@@ -57,54 +57,6 @@ const updateQuantity = async (req, res) => {
   }
 };
 
-// const createProduct = async (req, res) => {
-//   const { name, price, rating, imageUrl, quantity } = req.body;
-
-//   try {
-//     if (!name || !price || quantity === undefined) {
-//       return res
-//         .status(400)
-//         .json({ message: "Name, price, and quantity are required." });
-//     }
-//     const product = await Product.create({
-//       name,
-//       price,
-//       rating,
-//       imageUrl,
-//       quantity,
-//     });
-//     const productsFilePath = path.join(__dirname, "../data/cart-products.json");
-//     let products = [];
-
-//     if (fs.existsSync(productsFilePath)) {
-//       const rawData = fs.readFileSync(productsFilePath, "utf8");
-//       products = JSON.parse(rawData);
-//     }
-//     products.push({
-//       id: product.id,
-//       name,
-//       price,
-//       rating,
-//       imageUrl,
-//       quantity,
-//     });
-
-//     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-
-//     res.status(201).json({
-//       message: "Product created successfully!",
-//       product,
-//     });
-//   } catch (error) {
-//     console.error("Error creating product:", error);
-//     res.status(500).json({
-//       message: "Error creating product.",
-//       error: error.message || error,
-//     });
-//   }
-// };
-
-
 const createProduct = async (req, res) => {
   const {
     name,
