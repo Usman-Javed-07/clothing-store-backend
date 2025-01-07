@@ -18,7 +18,7 @@
     "price": 141,
     "rating": 5,
     "imageUrl": "http://localhost:5000/images/blue-jeans.jpg",
-    "quantity": 30
+    "quantity": 31
   },
   {
     "id": 3,
@@ -84,5 +84,31 @@
     "fit": "1024",
     "details": "dell laptop",
     "recommendations": "100 recomended"
+  },
+  {
+    "id": 10,
+    "name": "b",
+    "price": 34,
+    "rating": 3,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 12,
+    "material": "",
+    "care_instructions": "",
+    "fit": "",
+    "details": "wew",
+    "recommendations": "gwe"
+  },
+  {
+    "id": 11,
+    "name": "Usman Javed",
+    "price": 21,
+    "rating": 4,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 12,
+    "material": "sdsf",
+    "care_instructions": "",
+    "fit": "dasf",
+    "details": "af",
+    "recommendations": "afd"
   }
 ]
