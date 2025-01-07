@@ -5,23 +5,38 @@
     "price": 19.99,
     "rating": 4.5,
     "imageUrl": "http://localhost:5000/images/white-tshirt.jpg",
-    "quantity": 50
+    "quantity": 50,
+    "material": "100% cotton",
+    "care_instructions": "Machine wash warm, tumble dry low",
+    "fit": "Regular fit",
+    "details": "Soft and breathable fabric, perfect for casual wear",
+    "recommendations": "Pair with jeans or shorts for a classic look"
   },
   {
     "id": 2,
-    "name": "Blue Denim Jeansgbr",
+    "name": "Blue Denim Jeans",
     "price": 141,
     "rating": 5,
     "imageUrl": "http://localhost:5000/images/blue-jeans.jpg",
-    "quantity": 3047
+    "quantity": 3047,
+    "material": "Denim",
+    "care_instructions": "Machine wash cold, do not bleach",
+    "fit": "Slim fit",
+    "details": "Stretchable fabric for added comfort",
+    "recommendations": "Style with a casual shirt or T-shirt"
   },
   {
     "id": 3,
-    "name": "Jacket",
+    "name": "Leather Jacket",
     "price": 129,
     "rating": 4.8,
     "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
-    "quantity": 20
+    "quantity": 20,
+    "material": "Genuine leather",
+    "care_instructions": "Dry clean only",
+    "fit": "Tailored fit",
+    "details": "Front zipper, two side pockets",
+    "recommendations": "Ideal for winter outings and casual rides"
   },
   {
     "id": 4,
@@ -29,230 +44,37 @@
     "price": 39,
     "rating": 4.6,
     "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
-    "quantity": 40
+    "quantity": 40,
+    "material": "Polyester blend",
+    "care_instructions": "Machine wash gentle, hang dry",
+    "fit": "Slim fit",
+    "details": "Printed design, short sleeves",
+    "recommendations": "Pair with casual trousers for a trendy look"
   },
   {
     "id": 5,
-    "name": "Summer shirt",
+    "name": "Summer Shirt",
     "price": 29.99,
     "rating": 4.4,
     "imageUrl": "http://localhost:5000/images/summer-dress.jpg",
-    "quantity": 60
+    "quantity": 60,
+    "material": "Linen",
+    "care_instructions": "Hand wash recommended",
+    "fit": "Relaxed fit",
+    "details": "Breathable fabric, short sleeves",
+    "recommendations": "Perfect for hot summer days"
   },
   {
     "id": 6,
-    "name": "girls trouser ",
+    "name": "Girls' Trouser",
     "price": 10,
     "rating": 3,
     "imageUrl": "http://localhost:5000/images/workout-leggings.jpg",
-    "quantity": 12
-  },
-  {
-    "id": 7,
-    "name": "Plaid Shirt",
-    "price": 34.99,
-    "rating": 4.3,
-    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
-    "quantity": 35
-  },
-  {
-    "id": 8,
-    "name": "Winter paint",
-    "price": 99.99,
-    "rating": 4.9,
-    "imageUrl": "http://localhost:5000/images/winter-coat.jpg",
-    "quantity": 10
-  },
-  {
-    "id": 9,
-    "name": "green paints for men",
-    "price": 23,
-    "rating": 4.5,
-    "imageUrl": "http://localhost:5000/images/graphic-tee.jpg",
-    "quantity": 40
-  },
-  {
-    "id": 10,
-    "name": "women Pants",
-    "price": 44.99,
-    "rating": 4.6,
-    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
-    "quantity": 10
-  },
-  {
-    "id": 11,
-    "name": "girls mordren shirts",
-    "price": 14.99,
-    "rating": 4.2,
-    "imageUrl": "http://localhost:5000/images/baseball-cap.jpg",
-    "quantity": 55
-  },
-  {
-    "id": 12,
-    "name": "simple shirt",
-    "price": 79.99,
-    "rating": 4.8,
-    "imageUrl": "http://localhost:5000/images/white-tshirt.jpg",
-    "quantity": 50
-  },
-  {
-    "id": 13,
-    "name": "winter jacket for men 2",
-    "price": 120,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/leather-jacket.jpg",
-    "quantity": 100
-  },
-  {
-    "id": 14,
-    "name": "Formal Shirt",
-    "price": 211,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/formal-shirt.jpg",
-    "quantity": 21
-  },
-  {
-    "id": 15,
-    "name": "Plaid Shirt",
-    "price": 59,
-    "rating": 4.7,
-    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
-    "quantity": 20
-  },
-  {
-    "id": 16,
-    "name": "Floral Maxi Dress",
-    "price": 69.99,
-    "rating": 4.6,
-    "imageUrl": "http://localhost:5000/images/workout-leggings.jpg",
-    "quantity": 25
-  },
-  {
-    "id": 17,
-    "name": "Linen Shirts",
-    "price": 34,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/black-hoodie.jpg",
-    "quantity": 31
-  },
-  {
-    "id": 18,
-    "name": "colored shirt",
-    "price": 129,
-    "rating": 4.8,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 10
-  },
-  {
-    "id": 19,
-    "name": "Knitted Sweater",
-    "price": 54.99,
-    "rating": 4.7,
-    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
-    "quantity": 20
-  },
-  {
-    "id": 20,
-    "name": "Classic shirt",
-    "price": 19.99,
-    "rating": 4.4,
-    "imageUrl": "http://localhost:5000/images/formal-shirt.jpg",
-    "quantity": 50
-  },
-  {
-    "id": 24,
-    "name": "iphone 16 pro max back cover",
-    "price": 13.5,
-    "rating": 4.8,
-    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
-    "quantity": 220
-  },
-  {
-    "id": 25,
-    "name": "slipper",
-    "price": 3.5,
-    "rating": 4.99,
-    "imageUrl": "http://localhost:5000/images/knitted-sweater.jpg",
-    "quantity": 50
-  },
-  {
-    "id": 26,
-    "name": "Product Name",
-    "price": 10.5,
-    "rating": 4.5,
-    "imageUrl": "example.jpg",
-    "quantity": 20
-  },
-  {
-    "id": 27,
-    "name": "laptop",
-    "price": 3000,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 200
-  },
-  {
-    "id": 28,
-    "name": "mouse ",
-    "price": 78,
-    "rating": 3,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 230
-  },
-  {
-    "id": 29,
-    "name": "Usman Javed",
-    "price": 233,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 3
-  },
-  {
-    "id": 30,
-    "name": "girls winter paint",
-    "price": 1900,
-    "rating": 5,
-    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
-    "quantity": 200
-  },
-  {
-    "id": 31,
-    "name": "shirts",
-    "price": 24,
-    "rating": 3,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 0
-  },
-  {
-    "id": 32,
-    "name": "Usman Javed",
-    "price": 42,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
-    "quantity": 71
-  },
-  {
-    "id": 33,
-    "name": "b",
-    "price": 12,
-    "rating": 3,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 12
-  },
-  {
-    "id": 34,
-    "name": "test",
-    "price": 150,
-    "rating": 4,
-    "imageUrl": "http://localhost:5000/images/plaid-shirt.jpg",
-    "quantity": 50
-  },
-  {
-    "id": 35,
-    "name": "Usman Javed",
-    "price": 12,
-    "rating": 2,
-    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
-    "quantity": 45
+    "quantity": 12,
+    "material": "Cotton blend",
+    "care_instructions": "Machine wash cold",
+    "fit": "Regular fit",
+    "details": "Elastic waistband, comfortable fit",
+    "recommendations": "Pair with a casual top for everyday wear"
   }
 ]
