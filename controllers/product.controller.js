@@ -232,6 +232,67 @@ const getProductById = async (req, res) => {
   }
 };
 
+const getProductAverageRating = async (req, res) => {
+  const { id } = req.params;  
+
+  try {
+    
+    const product = await Product.findByPk(id, {
+      attributes: ['rating']  
+    });
+
+    if (!product) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+
+    const rating = product.rating;
+
+    if (rating === null) {
+      return res.json({ averageRating: 0 });  
+    }
+
+
+    res.json({ averageRating: rating });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to fetch average rating." });
+  }
+};
+
+const updateProductRating = async (req, res) => {
+  const { id } = req.params; 
+  const { rating } = req.body; 
+
+  
+  if (!rating || isNaN(rating) || rating < 1 || rating > 5) {
+    return res.status(400).json({ error: "Invalid rating. Must be a number between 1 and 5." });
+  }
+
+  try {
+   
+    const product = await Product.findByPk(id);
+
+    if (!product) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+    const existingRating = product.rating || 0; 
+    const ratingCount = product.ratingCount || 0; 
+
+    const totalRating = existingRating * ratingCount; 
+    const newRatingCount = ratingCount + 1;
+    const newAverageRating = (totalRating + rating) / newRatingCount; 
+
+    product.rating = newAverageRating;
+    product.ratingCount = newRatingCount;
+    await product.save();
+    res.json({ newAverageRating });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to update rating." });
+  }
+};
+
+
 module.exports = {
   loadProducts,
   getProducts,
@@ -240,4 +301,6 @@ module.exports = {
   deleteProduct,
   updateProduct,
   getProductById,
+  getProductAverageRating,
+  updateProductRating,
 };
