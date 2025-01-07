@@ -110,5 +110,18 @@
     "fit": "dasf",
     "details": "af",
     "recommendations": "afd"
+  },
+  {
+    "id": 12,
+    "name": "wfs",
+    "price": 121,
+    "rating": 2,
+    "imageUrl": "http://localhost:5000/images/trench-coat.jpg",
+    "quantity": 65,
+    "material": "fdghe",
+    "care_instructions": "",
+    "fit": "gd",
+    "details": "gsgf",
+    "recommendations": "sgg"
   }
 ]

@@ -6,12 +6,15 @@ class Order extends Model {}
 
 Order.init(
   {
-
     totalAmount: {
       type: DataTypes.FLOAT,
       allowNull: false,
     },
     orderItems: {
+      type: DataTypes.JSON, 
+      allowNull: false,
+    },
+    userDetails: {
       type: DataTypes.JSON, 
       allowNull: false,
     },
