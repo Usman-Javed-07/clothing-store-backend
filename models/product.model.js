@@ -26,28 +26,28 @@ const Product = sequelize.define(
       allowNull: true,
     },
     quantity: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     material: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     care_instructions: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
-     fit: {
+    fit: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
-   details : {
+    details: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     recommendations: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
   },
   {

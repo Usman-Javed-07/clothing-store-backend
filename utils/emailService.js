@@ -2,7 +2,6 @@ const nodemailer = require("nodemailer");
 const fs = require("fs").promises;
 const path = require("path");
 
-// Function to read the HTML template
 async function getTemplate(templateName, replacements) {
   const templatePath = path.join(
     __dirname,
@@ -13,7 +12,6 @@ async function getTemplate(templateName, replacements) {
   try {
     let template = await fs.readFile(templatePath, "utf8");
 
-    // Replace placeholders in the template
     for (const key in replacements) {
       const placeholder = `{{${key}}}`;
       template = template.replace(
@@ -30,23 +28,22 @@ async function getTemplate(templateName, replacements) {
 
 async function sendEmail(to, subject, templateName, replacements) {
   try {
-    
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: process.env.SMTP_SECURE === "true", 
+      secure: process.env.SMTP_SECURE === "true",
       auth: {
-        user: process.env.SMTP_USER, 
-        pass: process.env.SMTP_PASS, 
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
     const htmlContent = await getTemplate(templateName, replacements);
 
     const mailOptions = {
-      from: process.env.EMAIL_FROM, 
-      to, 
-      subject, 
+      from: process.env.EMAIL_FROM,
+      to,
+      subject,
       html: htmlContent,
     };
 

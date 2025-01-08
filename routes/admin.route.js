@@ -4,13 +4,12 @@ const Admin = require("../models/admin.model");
 
 const router = express.Router();
 
-// Signup and login routes
 router.post("/signup", signup);
 router.post("/login", login);
 
 router.get("/", async (req, res) => {
   try {
-    const users = await Admin.findAll(); 
+    const users = await Admin.findAll();
     res.json(users);
   } catch (err) {
     console.error("Error fetching users:", err);

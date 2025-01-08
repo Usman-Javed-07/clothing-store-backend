@@ -23,7 +23,7 @@ Admin.init(
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true,  
+        isEmail: true,
       },
     },
     password: {
@@ -32,9 +32,9 @@ Admin.init(
     },
   },
   {
-    sequelize,       
-    modelName: "Admin", 
-    tableName: "admins", 
+    sequelize,
+    modelName: "Admin",
+    tableName: "admins",
     timestamps: true,
   }
 );

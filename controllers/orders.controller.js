@@ -1,4 +1,3 @@
-
 const Order = require("../models/order.model");
 const Product = require("../models/product.model");
 
@@ -9,7 +8,9 @@ const createOrder = async (req, res) => {
     if (!userDetails || !orderItems || !totalAmount) {
       return res
         .status(400)
-        .json({ message: "User details, order items, and total amount are required." });
+        .json({
+          message: "User details, order items, and total amount are required.",
+        });
     }
 
     const newOrder = await Order.create({

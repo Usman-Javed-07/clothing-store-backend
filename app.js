@@ -5,7 +5,7 @@ const { connectDB } = require("./config/database");
 const productRoutes = require("./routes/product.route");
 const orderRouter = require("./routes/order.route");
 const contactRoutes = require("./routes/contact.route");
-const admin = require('./routes/admin.route')
+const admin = require("./routes/admin.route");
 require("dotenv").config();
 
 const path = require("path");
@@ -25,7 +25,7 @@ app.use("/api/products", productRoutes);
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/contact", contactRoutes);
 app.use("/api", productRoutes);
-app.use('/api/admin', admin)
+app.use("/api/admin", admin);
 
 app.get("/", (req, res) => {
   res.send("API is running...");

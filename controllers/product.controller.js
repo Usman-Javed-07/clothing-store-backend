@@ -72,14 +72,11 @@ const createProduct = async (req, res) => {
   } = req.body;
 
   try {
-    // Validation: Ensure required fields are present
     if (!name || !price || quantity === undefined) {
       return res
         .status(400)
         .json({ message: "Name, price, and quantity are required." });
     }
-
-    // Create the product in the database
     const product = await Product.create({
       name,
       price,
@@ -93,17 +90,14 @@ const createProduct = async (req, res) => {
       recommendations,
     });
 
-    // Update the JSON file
     const productsFilePath = path.join(__dirname, "../data/cart-products.json");
     let products = [];
 
-    // Read existing products from the JSON file
     if (fs.existsSync(productsFilePath)) {
       const rawData = fs.readFileSync(productsFilePath, "utf8");
       products = JSON.parse(rawData);
     }
 
-    // Add the new product to the array
     products.push({
       id: product.id,
       name,
@@ -118,10 +112,8 @@ const createProduct = async (req, res) => {
       recommendations,
     });
 
-    // Write the updated products array back to the JSON file
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 
-    // Respond with the newly created product
     res.status(201).json({
       message: "Product created successfully!",
       product,
@@ -217,7 +209,7 @@ const getProductById = async (req, res) => {
   const productId = req.params.id;
 
   try {
-    const product = await Product.findByPk(productId); 
+    const product = await Product.findByPk(productId);
 
     if (!product) {
       return res.status(404).json({ error: "Product not found" });
@@ -233,12 +225,11 @@ const getProductById = async (req, res) => {
 };
 
 const getProductAverageRating = async (req, res) => {
-  const { id } = req.params;  
+  const { id } = req.params;
 
   try {
-    
     const product = await Product.findByPk(id, {
-      attributes: ['rating']  
+      attributes: ["rating"],
     });
 
     if (!product) {
@@ -248,9 +239,8 @@ const getProductAverageRating = async (req, res) => {
     const rating = product.rating;
 
     if (rating === null) {
-      return res.json({ averageRating: 0 });  
+      return res.json({ averageRating: 0 });
     }
-
 
     res.json({ averageRating: rating });
   } catch (error) {
@@ -260,27 +250,27 @@ const getProductAverageRating = async (req, res) => {
 };
 
 const updateProductRating = async (req, res) => {
-  const { id } = req.params; 
-  const { rating } = req.body; 
+  const { id } = req.params;
+  const { rating } = req.body;
 
-  
   if (!rating || isNaN(rating) || rating < 1 || rating > 5) {
-    return res.status(400).json({ error: "Invalid rating. Must be a number between 1 and 5." });
+    return res
+      .status(400)
+      .json({ error: "Invalid rating. Must be a number between 1 and 5." });
   }
 
   try {
-   
     const product = await Product.findByPk(id);
 
     if (!product) {
       return res.status(404).json({ error: "Product not found" });
     }
-    const existingRating = product.rating || 0; 
-    const ratingCount = product.ratingCount || 0; 
+    const existingRating = product.rating || 0;
+    const ratingCount = product.ratingCount || 0;
 
-    const totalRating = existingRating * ratingCount; 
+    const totalRating = existingRating * ratingCount;
     const newRatingCount = ratingCount + 1;
-    const newAverageRating = (totalRating + rating) / newRatingCount; 
+    const newAverageRating = (totalRating + rating) / newRatingCount;
 
     product.rating = newAverageRating;
     product.ratingCount = newRatingCount;
@@ -291,7 +281,6 @@ const updateProductRating = async (req, res) => {
     res.status(500).json({ error: "Failed to update rating." });
   }
 };
-
 
 module.exports = {
   loadProducts,

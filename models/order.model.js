@@ -1,6 +1,5 @@
-
 const { Model, DataTypes } = require("sequelize");
-const { sequelize } = require("../config/database"); 
+const { sequelize } = require("../config/database");
 
 class Order extends Model {}
 
@@ -11,19 +10,19 @@ Order.init(
       allowNull: false,
     },
     orderItems: {
-      type: DataTypes.JSON, 
+      type: DataTypes.JSON,
       allowNull: false,
     },
     userDetails: {
-      type: DataTypes.JSON, 
+      type: DataTypes.JSON,
       allowNull: false,
     },
   },
   {
-    sequelize, 
+    sequelize,
     modelName: "Order",
-    tableName: "orders", 
-    timestamps: true, 
+    tableName: "orders",
+    timestamps: true,
   }
 );
 
