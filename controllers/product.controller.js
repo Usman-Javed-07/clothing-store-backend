@@ -70,6 +70,7 @@ const createProduct = async (req, res) => {
     details,
     recommendations,
   } = req.body;
+  console.log(req.body); 
 
   try {
     if (!name || !price || quantity === undefined) {
