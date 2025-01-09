@@ -9,6 +9,7 @@ const {
   getProductById,
   getProductAverageRating,
   updateProductRating,
+  
 } = require("../controllers/product.controller");
 
 const router = express.Router();

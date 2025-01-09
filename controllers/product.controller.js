@@ -282,6 +282,7 @@ const updateProductRating = async (req, res) => {
   }
 };
 
+
 module.exports = {
   loadProducts,
   getProducts,
