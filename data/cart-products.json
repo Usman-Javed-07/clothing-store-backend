@@ -71,5 +71,18 @@
     "fit": "Regular fit",
     "details": "Elastic waistband, comfortable fit",
     "recommendations": "Pair with a casual top for everyday wear"
+  },
+  {
+    "id": 18,
+    "name": "laptop",
+    "price": 221,
+    "rating": 2,
+    "imageUrl": "http://localhost:5000/images/cargo-pants.jpg",
+    "quantity": 10,
+    "material": "silver",
+    "care_instructions": "gsfg",
+    "fit": "gsfdg",
+    "details": "sgdfg",
+    "recommendations": "gsdf"
   }
 ]

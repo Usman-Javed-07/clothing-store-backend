@@ -64,7 +64,47 @@ const getAllOrders = async (req, res) => {
   }
 };
 
+const updateOrderStatus = async (req, res) => {
+  const { orderId } = req.params;
+  const { status } = req.body; 
+
+  try {
+    const order = await Order.findByPk(orderId); 
+    if (!order) {
+      return res.status(404).json({ message: "Order not found." });
+    }
+
+    order.status = status; 
+    await order.save();
+
+    res.json(order); 
+  } catch (error) {
+    console.error("Error updating order status:", error);
+    res.status(500).json({ message: "Failed to update order status." });
+  }
+};
+
+const deleteOrder = async (req, res) => {
+  const { orderId } = req.params;
+
+  try {
+    const order = await Order.findByPk(orderId); 
+    if (!order) {
+      return res.status(404).json({ message: "Order not found." });
+    }
+
+    await order.destroy(); 
+    res.status(204).send(); 
+  } catch (error) {
+    console.error("Error deleting order:", error);
+    res.status(500).json({ message: "Failed to delete order." });
+  }
+};
+
+
 module.exports = {
   createOrder,
   getAllOrders,
+  updateOrderStatus,
+  deleteOrder,
 };
